@@ -4,25 +4,14 @@
              x:Class="PROYECTO_FINAL.encriptacion_descencriptacion">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#D03B3B" Padding="55" CornerRadius="0" >
-                <Label Text="CADA APP" HorizontalTextAlignment="Center" TextColor="black" FontSize="36" FontAttributes="Bold"/>
+            <Frame BackgroundColor="#D03B3B" Padding="35" CornerRadius="0" >
+                <Label Text="ENCRIPTAR/DESCENCRITAR" HorizontalTextAlignment="Center" TextColor="black" FontSize="20" FontAttributes="Bold"/>
 
             </Frame>
             <Image Source="logo4.jpg"/>
 
 
-            <Grid Padding="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button Grid.Row="2" Grid.Column="0" Text="Generar Clave" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20"/>
-
-                <Button Grid.Row="3" Grid.Column="0" Text="Cifrar/Descifrar" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20"/>
-            </Grid>
+            <Entry  Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="13"  />
 
             <Frame BackgroundColor="#D03B3B" Padding="20" CornerRadius="0" Margin="0, 250,0,0" >
 

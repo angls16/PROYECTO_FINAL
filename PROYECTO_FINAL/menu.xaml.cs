@@ -16,5 +16,17 @@ namespace PROYECTO_FINAL
         {
             InitializeComponent();
         }
+
+       
+
+        private async void btnGenerar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new generar_clave());
+        }
+
+        private async void btnCifrar_Descifrar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new encriptacion_descencriptacion());
+        }
     }
 }

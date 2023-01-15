@@ -10,7 +10,7 @@ namespace PROYECTO_FINAL
         {
             InitializeComponent();
 
-            MainPage = new menu();
+            MainPage = new NavigationPage (new menu());
         }
 
         protected override void OnStart()

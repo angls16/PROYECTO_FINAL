@@ -19,12 +19,12 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="2" Grid.Column="0" Text="Generar Clave" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20" />
+                <Button Grid.Row="1" Grid.Column="0" Text="Generar Clave" x:Name="btnGenerar" Clicked="btnGenerar_Clicked"  BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20" />
 
-                <Button Grid.Row="3" Grid.Column="0" Text="Cifrar/Descifrar" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20"/>
+                <Button Grid.Row="2" Grid.Column="0" Text="Cifrar/Descifrar" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="20" x:Name="btnCifrar_Descifrar" Clicked="btnCifrar_Descifrar_Clicked" />
             </Grid>
 
-            <Frame BackgroundColor="#D03B3B" Padding="20" CornerRadius="0" Margin="0, 250,0,0" >
+            <Frame BackgroundColor="#D03B3B" Padding="27" CornerRadius="0" Margin="0, 270,0,0" >
         
             </Frame>
 
