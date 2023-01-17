@@ -2,20 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PROYECTO_FINAL.encriptacion_descencriptacion">
-    <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="#D03B3B" Padding="35" CornerRadius="0" >
-                <Label Text="ENCRIPTAR/DESCENCRITAR" HorizontalTextAlignment="Center" TextColor="black" FontSize="20" FontAttributes="Bold"/>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="150" />
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" BackgroundColor="#D03B3B" Padding="30" CornerRadius="0" >
+            <Label Text="Encriptar/Descencriptar" HorizontalTextAlignment="Center" TextColor="black" FontSize="25" FontAttributes="Bold"/>
 
-            </Frame>
-            <Image Source="logo4.jpg"/>
-
-
-            <Entry  Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="13"  />
-
-            <Frame BackgroundColor="#D03B3B" Padding="20" CornerRadius="0" Margin="0, 250,0,0" >
-
-            </Frame>
+        </Frame>
+        
+        <StackLayout Grid.Row="1" >
+            <Label Text="Ingrese el Texto " />
+            <Entry Placeholder="" />
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Grid.Row="2" >
+            <CheckBox   ></CheckBox>
+            <CheckBox   ></CheckBox>
+        </StackLayout>
+        <StackLayout Grid.Row="3" >
+            <Label Text="Ingrese el Texto " />
+            <Entry Placeholder="" />
+        </StackLayout>
+
+        <Grid Grid.Row="4" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" ></Button>
+            <Button Grid.Column="1" ></Button>
+            <Button Grid.Column="2" ></Button>
+        </Grid>
+        
+
+
+
+
+    </Grid>
+        
+
+    
+    
 </ContentPage>
