@@ -4,11 +4,12 @@
              x:Class="PROYECTO_FINAL.menu">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#D03B3B" Padding="55" CornerRadius="0" >
+            <Frame BackgroundColor="#D03B3B" Padding="60" CornerRadius="0" >
                 <Label Text="CADA APP" HorizontalTextAlignment="Center" TextColor="black" FontSize="36" FontAttributes="Bold"/>
             
             </Frame>
-            <Image Source="logo4.jpg"/>
+           
+            
 
             
             <Grid Padding="0">
