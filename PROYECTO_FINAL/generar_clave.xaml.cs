@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PROYECTO_FINAL
 {
@@ -45,8 +46,12 @@ namespace PROYECTO_FINAL
         {
 
         }
-        private void copiar_Clicked(object sender, EventArgs e)
+        private async void copiar_Clicked(object sender, EventArgs e)
         {
+            var text2 = Clipboard.HasText;
+            await Clipboard.SetTextAsync(generado.Text);
+            var text = await Clipboard.GetTextAsync();
+            DisplayAlert("Copiado", " la Clave Generada se a copiado correctamente ", "Ok");
         }
     }
 }
