@@ -48,10 +48,18 @@ namespace PROYECTO_FINAL
         }
         private async void copiar_Clicked(object sender, EventArgs e)
         {
-            var text2 = Clipboard.HasText;
-            await Clipboard.SetTextAsync(generado.Text);
-            var text = await Clipboard.GetTextAsync();
-            DisplayAlert("Copiado", " la Clave Generada se a copiado correctamente ", "Ok");
+            if (generado.Text == "")
+            {
+                var text2 = Clipboard.HasText;
+                await Clipboard.SetTextAsync(generado.Text);
+                var text = await Clipboard.GetTextAsync();
+                await DisplayAlert("Copiado", " la Clave Generada se a copiado correctamente ", "Salir");
+            }
+            else {
+                await DisplayAlert("Error", " No se a generado correctamente ", "Salir");
+            }
+
+                
         }
     }
 }
