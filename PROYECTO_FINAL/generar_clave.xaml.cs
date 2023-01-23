@@ -18,6 +18,7 @@ namespace PROYECTO_FINAL
             InitializeComponent();
         }
         string Permutacion = "";
+
         public void bloque(object sender, EventArgs e) {
             Button boton = (Button)sender;
             if(boton.Text == "8"){
